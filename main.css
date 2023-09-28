@@ -1,0 +1,14 @@
+h1 {
+    font-style: italic;
+    
+}
+
+h2 {
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}

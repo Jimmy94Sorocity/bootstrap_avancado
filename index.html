@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Avançado</title>
+    <link rel="stylesheet" href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+    <header>
+        <div class="navbar navbar-expand-lg">
+            <h1>Viagens Extraordinárias</h1>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#opcoes">Destinos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Fotos</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <section id="opcoes">
+            <h2 class="text-center">Opções de Destino</h2>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 card text-bg-warning p-0">
+                    <div class="card-header">
+                        <h3 class="text-center">Salvador</h3>
+                    </div>
+                    <img src="https://via.placeholder.com/100x100" />
+                    <div class="card-body">
+                        <h4 class="card-title">Viaje para o melhor do nordeste</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorem quisquam, modi nemo debitis repudiandae. Incidunt provident accusamus reprehenderit optio dignissimos, earum aliquam impedit saepe mollitia accusantium nostrum totam! Pariatur!
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                </div>
+                <div class="col-md-4 card text-bg-success p-0">
+                    <div class="card-header">
+                        <h3 class="text-center">Rio de Janeiro</h3>
+                    </div>
+                    <img src="https://via.placeholder.com/100x100" />
+                    <div class="card-body">
+                        <h4 class="card-title">A cidade maravilhosa como você nunca viu!</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorem quisquam, modi nemo debitis repudiandae. Incidunt provident accusamus reprehenderit optio dignissimos, earum aliquam impedit saepe mollitia accusantium nostrum totam! Pariatur!
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                </div>
+                <div class="col-md-4 card text-bg-primary p-0">
+                    <div class="card-header">
+                        <h3 class="text-center">Fortaleza</h3>
+                    </div>
+                    <img src="https://via.placeholder.com/100x100" />
+                    <div class="card-body">
+                        <h4 class="card-title">Venha conhecer as dunas cearenses</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorem quisquam, modi nemo debitis repudiandae. Incidunt provident accusamus reprehenderit optio dignissimos, earum aliquam impedit saepe mollitia accusantium nostrum totam! Pariatur!
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                </div>
+                <div class="col-md-4 card text-bg-dark p-0">
+                    <img src="https://cdn.pixabay.com/photo/2023/06/11/16/07/switzerland-8056381_640.jpg" />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Montanhas Suiças</h4>
+                        <p class="card-text">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta dolorem quisquam, modi nemo debitis repudiandae. 
+                        </p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="galeria">
+            <h2 class="text-center">Galeria de Fotos Internacionais</h2>
+        </section>
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/10/25/12/13/landscapes-2887796_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Cabana na floresta canadense</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2016/08/18/02/07/landscape-1602015_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Retiro na Holanda</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="https://cdn.pixabay.com/photo/2017/02/18/15/44/germany-2077473_1280.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Colinas alemãs</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
